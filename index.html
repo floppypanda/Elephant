@@ -3,6 +3,7 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Serif">
     <link href='https://fonts.googleapis.com/css?family=Chivo:400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
@@ -11,26 +12,41 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <title>Elephant</title>
-    
+
     <style>
+      body {
+        font-family: 'PT Serif';
+      }
+
       li {
         margin-top: 1em;
       }
-      
+
+      .header {
+        display: flex;
+        flex-direction: row;
+      }
+      .headertext {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1em;
+      }
     </style>
   </head>
 
   <body>
-    <div id="container">      
+    <div id="container">
       <div class="inner">
 
         <header>
           <h1>
-          <div>
+          <div class='header'>
             <img src="images/elephantLogo-v2-fs8.png" style="vertical-align: middle;"/>
-            <span style="vertical-align: middle;">Elephant
-            <h2>Notetaker with a classic interface.</h2>
-            </span>
+            <div class='headertext'>
+              <span style="vertical-align: middle;">Elephant</span>
+              <h2>Notetaker with a classic interface.</h2>
+            </div>
           </div>
           </h1>
         </header>
@@ -40,7 +56,7 @@
   <a href="http://elephant.mine.nu/win">Windows</a>
   <a href="http://elephant.mine.nu/jar">Linux</a>
 </p>
-        
+
         <hr>
 
         <section id="main_content">
@@ -80,8 +96,8 @@
         })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    
-    
+
+
         </section>
 
         <footer>
@@ -129,7 +145,7 @@
     <br/>
     <iframe src="http://kivi.mine.nu" width="620" height="620" frameborder="0"></iframe>
     <br/><br/>
-    </center>    
+    </center>
 
 </body>
 </html>
